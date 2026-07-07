@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(-45deg,
+    #141E30,
+    #243B55,
+    #4A00E0,
+    #8E2DE2);
+
+    background-size:400% 400%;
+
+    animation:bg 12s ease infinite;
+
+    color:white;
+
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:25px 80px;
+
+}
+
+.logo{
+
+font-size:30px;
+
+font-weight:bold;
+
+color:#00f7ff;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:white;
+
+margin-left:30px;
+
+font-size:18px;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#00f7ff;
+
+}
+
+.hero{
+
+display:flex;
+
+justify-content:space-around;
+
+align-items:center;
+
+height:85vh;
+
+padding:40px;
+
+}
+
+.content{
+
+width:50%;
+
+animation:slideLeft 1.5s;
+
+}
+
+.content h3{
+
+font-size:25px;
+
+}
+
+.content h1{
+
+font-size:65px;
+
+color:#00f7ff;
+
+margin:10px 0;
+
+}
+
+.content h2{
+
+font-size:35px;
+
+margin-bottom:15px;
+
+}
+
+.content p{
+
+font-size:18px;
+
+line-height:30px;
+
+margin-bottom:30px;
+
+}
+
+.btn{
+
+text-decoration:none;
+
+padding:15px 35px;
+
+background:#00f7ff;
+
+color:#111;
+
+font-weight:bold;
+
+border-radius:40px;
+
+box-shadow:0 0 25px cyan;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+background:white;
+
+transform:scale(1.08);
+
+box-shadow:0 0 40px white;
+
+}
+
+.social{
+
+margin-top:40px;
+
+}
+
+.social i{
+
+font-size:28px;
+
+margin-right:20px;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.social i:hover{
+
+color:#00f7ff;
+
+transform:translateY(-8px);
+
+}
+
+.image{
+
+position:relative;
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+.circle{
+
+width:380px;
+
+height:380px;
+
+background:#00f7ff;
+
+border-radius:50%;
+
+position:absolute;
+
+top:10px;
+
+left:10px;
+
+filter:blur(60px);
+
+opacity:.35;
+
+}
+
+.image img{
+
+width:350px;
+
+height:350px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid white;
+
+position:relative;
+
+box-shadow:0 0 40px cyan;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+@keyframes slideLeft{
+
+from{
+
+transform:translateX(-100px);
+
+opacity:0;
+
+}
+
+to{
+
+transform:translateX(0);
+
+opacity:1;
+
+}
+
+}
